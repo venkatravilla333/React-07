@@ -1,6 +1,8 @@
 import React from 'react'
 import Child from './Child'
 import Jsx from './JSX/Jsx';
+import Parent from './Props/child to parent/Parent';
+// import Parent from './Props/parent to child/Parent';
 //functional component
 
 // function App() {
@@ -22,11 +24,12 @@ class App extends React.Component{
   render() {
     return (
       <div className='app'>
-        <h1>App {this.state.num}</h1>
+        {/* <h1>App {this.state.num}</h1>
         <Child data='sachin' num={this.state.num} />
         <Child data = 'kohli'/>
         <Child data='dhoni' />
-        <Jsx/>
+        <Jsx/> */}
+        <Parent/>
       </div>
     ); 
   }
