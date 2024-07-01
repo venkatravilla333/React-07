@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root">
+    <!-- <p>Kohli</p> -->
+  </div>
+
+  
+  <!-- //  var p = document.createElement('p')
+  //  console.log(p)
+  //  p.id = 'mypara'
+  //  p.innerHTML = 'Kohli'
+
+  // var root = document.getElementById('root')
+  // console.log(root) -->
+
+  <!-- // root.appendChild(p) -->
+  
+
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+   <script>
+   var p = React.createElement('p', {id:'mypara'}, 'kohli')
+  var root = ReactDOM.createRoot(document.getElementById('root'))
+  root.render(p)
+   </script>
+</body>
+</html>
