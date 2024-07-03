@@ -1,7 +1,8 @@
 import React from 'react'
 import Child from './Child'
 import Jsx from './JSX/Jsx';
-import Parent from './Props/child to parent/Parent';
+import A from './State/localState/functionalComponents/simpleData/A';
+// import Parent from './Props/child to parent/Parent';
 // import Parent from './Props/parent to child/Parent';
 //functional component
 
@@ -29,7 +30,8 @@ class App extends React.Component{
         <Child data = 'kohli'/>
         <Child data='dhoni' />
         <Jsx/> */}
-        <Parent/>
+        {/* <Parent/> */}
+        <A/>
       </div>
     ); 
   }
