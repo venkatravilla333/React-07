@@ -1,7 +1,8 @@
 import React from 'react'
-import Child from './Child'
-import Jsx from './JSX/Jsx';
-import A from './State/localState/functionalComponents/simpleData/A';
+import A from './State/SyncData/FunctionalComponents/3.PropsDrilling/A';
+// import Child from './Child'
+// import Jsx from './JSX/Jsx';
+// import A from './State/FunctionalComponents/1.LocalState/A';
 // import Parent from './Props/child to parent/Parent';
 // import Parent from './Props/parent to child/Parent';
 //functional component
