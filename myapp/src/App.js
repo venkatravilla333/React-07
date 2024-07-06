@@ -1,5 +1,6 @@
 import React from 'react'
-import A from './State/SyncData/FunctionalComponents/3.PropsDrilling/A';
+import A from './State/SyncData/FunctionalComponents/4.GlobalState/React-Redux/React-Components/A';
+// import A from './State/SyncData/FunctionalComponents/3.PropsDrilling/A';
 // import Child from './Child'
 // import Jsx from './JSX/Jsx';
 // import A from './State/FunctionalComponents/1.LocalState/A';
