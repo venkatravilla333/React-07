@@ -1,7 +1,14 @@
 
-import { createStore } from 'redux'
-import { countReducer } from './countReducer'
+import { combineReducers, createStore } from 'redux'
+import { countReducer } from './count/countReducer'
+import { cakeReducer } from './cake/cakeReducer'
+
 
 // var x = 100
 
-export var store = createStore(countReducer)
+var rootReducer = combineReducers({
+  countReducer: countReducer,
+  cakeReducer: cakeReducer
+})
+
+export var store = createStore(rootReducer)
