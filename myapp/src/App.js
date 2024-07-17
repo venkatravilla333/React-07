@@ -1,6 +1,12 @@
 import React from 'react'
-import A from './State/SyncData/FunctionalComponents/4.GlobalState/React-Redux/React-Components/A';
-import Render from './Performance/Conditional-Rendering/Render';
+// import A from './State/SyncData/FunctionalComponents/4.GlobalState/React-Redux/React-Components/A';
+// import Render from './Performance/Conditional-Rendering/Render';
+// import Fragment from './Performance/Fragment/Fragment';
+
+// import Inline from './CSS/Inline/Inline';
+import Login from './CSS/Style-sheet/MyLogin';
+import Signup from './CSS/Style-sheet/Signup';
+import MyLogin from './CSS/Style-sheet/MyLogin';
 // import List from './Lists/List';
 // import Parent from './Destructuring/Parent';
 // import A from './State/SyncData/FunctionalComponents/4.GlobalState/ContextAPI/A';
@@ -49,7 +55,11 @@ class App extends React.Component{
         {/* <A/> */}
         {/* <List/> */}
         {/* <Parent/> */}
-        <Render/>
+        {/* <Render/> */}
+        {/* <Fragment/> */}
+        {/* <Inline/> */}
+        <MyLogin/>
+        <Signup />
       </div>
     ); 
   }
