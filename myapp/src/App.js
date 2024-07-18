@@ -7,6 +7,9 @@ import React from 'react'
 import Login from './CSS/Style-sheet/MyLogin';
 import Signup from './CSS/Style-sheet/Signup';
 import MyLogin from './CSS/Style-sheet/MyLogin';
+import Value from './normal vs state vs ref/Value';
+import InputRef from './Refs/InputRef';
+import Timer from './Refs/Timer';
 // import List from './Lists/List';
 // import Parent from './Destructuring/Parent';
 // import A from './State/SyncData/FunctionalComponents/4.GlobalState/ContextAPI/A';
@@ -58,8 +61,11 @@ class App extends React.Component{
         {/* <Render/> */}
         {/* <Fragment/> */}
         {/* <Inline/> */}
-        <MyLogin/>
-        <Signup />
+        {/* <MyLogin/> */}
+        {/* <Signup /> */}
+        {/* <Value/> */}
+        {/* <InputRef/> */}
+        <Timer/>
       </div>
     ); 
   }
