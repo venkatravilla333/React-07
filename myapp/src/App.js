@@ -1,15 +1,18 @@
 import React from 'react'
+import Parent from './Performance/Duplicate-Logic/funCom/custom-hooks/Parent';
+// import Parent from './Performance/Duplicate-Logic/classCom/Render-Props/Parent';
 // import A from './State/SyncData/FunctionalComponents/4.GlobalState/React-Redux/React-Components/A';
 // import Render from './Performance/Conditional-Rendering/Render';
 // import Fragment from './Performance/Fragment/Fragment';
 
 // import Inline from './CSS/Inline/Inline';
-import Login from './CSS/Style-sheet/MyLogin';
-import Signup from './CSS/Style-sheet/Signup';
-import MyLogin from './CSS/Style-sheet/MyLogin';
-import Value from './normal vs state vs ref/Value';
-import InputRef from './Refs/InputRef';
-import Timer from './Refs/Timer';
+// import Login from './CSS/Style-sheet/MyLogin';
+// import Signup from './CSS/Style-sheet/Signup';
+// import MyLogin from './CSS/Style-sheet/MyLogin';
+// import Value from './normal vs state vs ref/Value';
+// import InputRef from './Refs/InputRef';
+// import Timer from './Refs/Timer';
+// import Parent from './Performance/Duplicate-Logic/classCom/HOC/Parent';
 // import List from './Lists/List';
 // import Parent from './Destructuring/Parent';
 // import A from './State/SyncData/FunctionalComponents/4.GlobalState/ContextAPI/A';
@@ -65,7 +68,8 @@ class App extends React.Component{
         {/* <Signup /> */}
         {/* <Value/> */}
         {/* <InputRef/> */}
-        <Timer/>
+        {/* <Timer/> */}
+        <Parent/>
       </div>
     ); 
   }
