@@ -1,5 +1,6 @@
 import React from 'react'
-import Parent from './Performance/Duplicate-Logic/funCom/custom-hooks/Parent';
+import Parent from './Portals/Parent';
+// import Parent from './Performance/Duplicate-Logic/funCom/custom-hooks/Parent';
 // import Parent from './Performance/Duplicate-Logic/classCom/Render-Props/Parent';
 // import A from './State/SyncData/FunctionalComponents/4.GlobalState/React-Redux/React-Components/A';
 // import Render from './Performance/Conditional-Rendering/Render';

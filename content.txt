@@ -372,4 +372,52 @@ package.lock.json
       2) Context API
 
       3) Redux
+
+      Portals
+    =======
+
+    
+  - Portal is an advanced concept in react which provides a way to render child component outside      of parent DOM hierarchy.
+
+  - If any child component having modal/popup/tooltip in its JSX then its parent component's css       will effect the child,s css.
+
+  - To implement a portal in React, you use the ReactDOM.createPortal() method. This method allows     you to specify the content you want to render and the target DOM element where it should be        inserted.
+
+       - Create one more div in index.html file to render child component in which modal develops.
+
+              <div id='model-root'></div>
+
+       - In child component JSX use the below to create portal. 
+
+            => ReactDOM.createPortal(modal, document.getElementById(model-root))
+
+  - By using portals, you can achieve more flexibility in rendering elements and create better         user experiences when it comes to managing overlapping or out-of-flow components in React          applications.
+
+   .modal-overlay {
+
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+ .content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+
+  box-shadow: 0 2px 8px rgba(0 0 0 0.5)
+  }
+
+ /* .app {
+      position: relative
+    } */
+
+
   
