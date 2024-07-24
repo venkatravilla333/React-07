@@ -1,18 +1,19 @@
 import React from 'react'
 import './style.css'
+import {Link} from 'react-router-dom'
 
 function Header() {
   return (
     <div className='header'>
       <ul>
         <li>
-          <a href='/home'>Home</a>
+          <Link to='/home'>Home</Link>
         </li>
         <li>
-          <a href='/about'>About</a>
+          <Link to='/about'>About</Link>
         </li>
         <li>
-          <a href='/products'>Products</a>
+          <Link to='/products'>Products</Link>
         </li>
       </ul>
     </div>

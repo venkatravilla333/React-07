@@ -6,6 +6,8 @@ import './style.css'
 import {Routes, Route} from 'react-router-dom'
 import Footer from './Footer'
 import Header from './Header'
+import ProductInfo from './ProductInfo'
+import NotFound from './NotFound'
 
 function Parent() {
   return (
@@ -14,7 +16,11 @@ function Parent() {
       <Routes>
         <Route path='/home' element={<Home/> } />
         <Route path='/about' element={<About />} />
-        <Route path='/products' element={<Products/> } />
+        <Route path='*' element={<NotFound />} />
+        <Route path='/products' element={<Products />}>
+          <Route path=':id' element={<ProductInfo />} />
+        </Route>
+        
       </Routes>
       <Footer/>
     
