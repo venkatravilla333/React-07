@@ -421,3 +421,91 @@ package.lock.json
 
 
   
+
+  
+16) Routing
+    =======
+
+   => MPA vs SPA
+      ----------
+
+    -With MPAs, every time we want to see something new, the whole web page has to reload
+
+     With SPAs no need to reload the whole page when we see some new content.
+     
+     In MPA for every request whole page getting reload, In SPA for every request a part of page        getting reload.
+
+    -MPAs will have the entire page getting reloaded Where as SPAs will have the main page loaded
+
+     once and then sub page sections are changing without refresh and this is handeled by JS
+
+     inside browser. 
+
+    -MPAs are traditional where as SPAs are modren approach.
+   
+    -To make a single page application we have to impliment the client side routing by using
+
+     react-router-dom library.
+
+   => Install react-router-dom
+
+     Need to install the react-router-dom library to create routing in react, it is dom version.
+
+       => npm i react-router-dom                  
+
+   => Configure Routing
+
+      First step is to configure the router is giving top level or height order component named
+
+      <BorwserRouter/>
+   
+      All the routes and components will be wrapped inside the <BrowserRouter/> component, as 
+
+      it will store the URLs internally, using which you actually route through all the components
+
+      or basically the entire application. It keeps track of changes and navigation history.
+
+      Routes and Route =>
+
+      When we click on the link which will be in the URL and The Routes component will look for
+
+      the related child route configured with the same URL value.
+
+      To impliment the SPA, react router provided us Link component.
+
+
+   => Link 
+
+      Link component is used to create SPA in react. When you click on any link it will not              refresh or reload entire page. It will load only particular section of data from server.
+
+   => Dynamic routing (useParams)
+
+      When we have lot of products from database then creating routes for each product is 
+      not easy. Then we create only one route for all products by using dynamic routing concept.
+
+   => Not matching route
+
+      If user is typed the URL for route which is not created then we have to handle that case
+
+      by creating one component which is rendered for not matched route.
+
+      give * for path while configure route. 
+ 
+   => Nested routes (Outlet)
+
+      When we click on link on menu then child component will be rendered but the menu will be           hidden, to persist the menu we have to create nested route for child component.
+      To render child component we have to use Outlet component.
+
+   => state: state is an attribute with the Link which you can use to pass data across various components inside the router application. useLocation hook is used to access data which is passed through Link in router.
+
+   => useNavigate hook returns a function which can be used to navigate to a specific url or to previous visited urls.
+  
+   => Protected routes 
+
+   => lazy loading
+
+Lazy loading in React.js is a technique used to improve the performance of web applications by loading certain components, routes, or modules only when they are needed, rather than loading them all at once when the application initially loads. This can significantly reduce the initial load time and resource usage of your application, especially for larger and more complex applications.
+
+Lazy loading is typically achieved using two primary mechanisms in React:
+
+Dynamic Imports: You can use JavaScript's dynamic import() function, which allows you to load modules or components asynchronously. By dynamically importing a module, you can specify when and where to load the code.

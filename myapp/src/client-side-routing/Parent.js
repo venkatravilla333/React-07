@@ -3,18 +3,22 @@ import Home from './Home'
 import About from './About'
 import Products from './Products'
 import './style.css'
-import {Routes, Route} from 'react-router-dom'
+import {Routes, Route, useLocation} from 'react-router-dom'
 import Footer from './Footer'
 import Header from './Header'
 import ProductInfo from './ProductInfo'
 import NotFound from './NotFound'
+import Login from './Login'
 
 function Parent() {
+ var location =  useLocation()
   return (
     <div>
-     <Header/>
+      {/* <Header/> */}
+      {location.pathname != '/login' && <Header/>}
       <Routes>
-        <Route path='/home' element={<Home/> } />
+        <Route path='/' element={<Home/> } />
+        <Route path='/login' element={<Login/> } />
         <Route path='/about' element={<About />} />
         <Route path='*' element={<NotFound />} />
         <Route path='/products' element={<Products />}>
@@ -22,7 +26,8 @@ function Parent() {
         </Route>
         
       </Routes>
-      <Footer/>
+      {/* <Footer/> */}
+      {location.pathname != '/login' && <Footer/>}
     
     </div>
   );
