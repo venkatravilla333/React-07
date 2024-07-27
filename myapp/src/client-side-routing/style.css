@@ -6,6 +6,7 @@ a{
   /* color: white; */
   color: rgb(8, 97, 199);
   font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
 li{
   display: inline-block;
@@ -30,3 +31,7 @@ li{
   align-items: center;
 
 }
+
+/* .active{
+  color: yellow;
+} */

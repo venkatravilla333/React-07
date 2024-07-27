@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import { Link, Outlet } from 'react-router-dom';
+import { Link, NavLink, Outlet } from 'react-router-dom';
+import './style.css'
 
 function Products() {
   var [products] = useState([
@@ -33,7 +34,7 @@ function Products() {
       <ul>
         {products.map((product) => {
           return <li>
-            <Link state={product} to={`/products/${product.id}`}>{product.name}</Link>
+            <NavLink state={product} to={`/products/${product.id}`} >{product.name}</NavLink>
             </li>       
         })}
         <Outlet/>

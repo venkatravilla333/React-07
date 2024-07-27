@@ -493,7 +493,7 @@ package.lock.json
  
    => Nested routes (Outlet)
 
-      When we click on link on menu then child component will be rendered but the menu will be           hidden, to persist the menu we have to create nested route for child component.
+      When we click on link on menu then child component will be rendered but the menu will be  hidden, to persist the menu we have to create nested route for child component.
       To render child component we have to use Outlet component.
 
    => state: state is an attribute with the Link which you can use to pass data across various components inside the router application. useLocation hook is used to access data which is passed through Link in router.
