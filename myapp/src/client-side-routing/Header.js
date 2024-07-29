@@ -10,7 +10,9 @@ function Header() {
           <NavLink to='/'>Home</NavLink>
         </li>
         <li>
-          <NavLink to='/about'>About</NavLink>
+          <NavLink to='/about' style={({isActive}) => {
+            return isActive ? {color: 'yellow'} : {color:'red'}
+          }}>About</NavLink>
         </li>
         <li>
           <NavLink to='/products'>Products</NavLink>

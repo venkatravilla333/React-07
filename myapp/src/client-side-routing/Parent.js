@@ -19,19 +19,21 @@ function Parent() {
       {/* <Header/> */}
       {location.pathname != '/login' && <Header />}
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/login' element={<Login />} />
-        <Route
-          path='/about'
-          element={
-            <React.Suspense fallback='loading'>
-              <LazyCom />
-            </React.Suspense>
-          }
-        />
-        <Route path='*' element={<NotFound />} />
-        <Route path='/products' element={<Products />}>
-          <Route path=':id' element={<ProductInfo />} />
+        <Route path='/'>
+          <Route index element={<Home />} />
+          <Route path='/login' element={<Login />} />
+          <Route
+            path='/about'
+            element={
+              <React.Suspense fallback='loading'>
+                <LazyCom />
+              </React.Suspense>
+            }
+          />
+          <Route path='*' element={<NotFound />} />
+          <Route path='/products' element={<Products />}>
+            <Route path=':id' element={<ProductInfo />} />
+          </Route>
         </Route>
       </Routes>
       {/* <Footer/> */}
