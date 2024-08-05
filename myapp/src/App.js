@@ -1,9 +1,11 @@
 import React from 'react'
-import Parent from './client-side-routing/Parent';
-import Inline from './CSS/Inline/Inline';
-import External from './CSS/Extrenal/External';
-import Buttonone from './CSS/Css-Modules/Buttonone';
-import Buttontwo from './CSS/Css-Modules/Buttontwo';
+import Parent from './Performance/Virtual-Dom/WithSameProp-Value/Parent';
+// import Parent from './Performance/Virtual-Dom/Without-Props/Parent';
+// import Parent from './client-side-routing/Parent';
+// import Inline from './CSS/Inline/Inline';
+// import External from './CSS/Extrenal/External';
+// import Buttonone from './CSS/Css-Modules/Buttonone';
+// import Buttontwo from './CSS/Css-Modules/Buttontwo';
 // import Parent from './Portals/Parent';
 // import Parent from './Performance/Duplicate-Logic/funCom/custom-hooks/Parent';
 // import Parent from './Performance/Duplicate-Logic/classCom/Render-Props/Parent';
@@ -79,8 +81,10 @@ class App extends React.Component{
         {/* <Parent/> */}
         {/* <Inline/> */}
         {/* <External/> */}
-        <Buttonone />
-        <Buttontwo />
+        {/* <Buttonone />
+        <Buttontwo /> */}
+        {/* <Parent/> */}
+        <Parent/>
       </div>
     ); 
   }
