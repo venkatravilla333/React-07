@@ -14,7 +14,8 @@ function Parent() {
       <h1>Parent component: {count}</h1>
       <button onClick={()=>setCount(count+1)}>Parent button</button>      
      
-      <Child x={{...x, age: 20}} />
+      <Child x={{ ...x, age: 20 }} />
+  
     
     </div>
   )
