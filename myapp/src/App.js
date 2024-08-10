@@ -2,6 +2,7 @@ import React from 'react'
 import Parent from './Performance/Virtual-Dom/WithSameProp-Value/Parent';
 import Heavy from './Performance/Virtual-Dom/WithSameProp-Value/Heavy';
 import CallbackParent from './Performance/Virtual-Dom/WithSameProp-Value/CallbackParent';
+import Myclass from './Myclass';
 // import Parent from './Performance/Virtual-Dom/Without-Props/Parent';
 // import Parent from './client-side-routing/Parent';
 // import Inline from './CSS/Inline/Inline';
@@ -88,7 +89,8 @@ class App extends React.Component{
         {/* <Parent/> */}
         {/* <Parent/> */}
         {/* <Heavy/> */}
-        <CallbackParent/>
+        {/* <CallbackParent/> */}
+        {new Myclass().render()}
       </div>
     ); 
   }
