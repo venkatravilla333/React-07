@@ -1,8 +1,16 @@
 import React from 'react'
-import Parent from './Performance/Virtual-Dom/WithSameProp-Value/Parent';
-import Heavy from './Performance/Virtual-Dom/WithSameProp-Value/Heavy';
-import CallbackParent from './Performance/Virtual-Dom/WithSameProp-Value/CallbackParent';
-import Myclass from './Myclass';
+import Parent from './Life-Cycle-Methods/Error-Boundry/Parent';
+// import Container from './Life-Cycle-Methods/Cleanup/FunCom/Container';
+// import Parent from './Life-Cycle-Methods/Runs-Only-Once/FunCom/Parent';
+// import Parent from './Life-Cycle-Methods/Runs-Conditionally/FunCom/Parent';
+// import Parent from './Life-Cycle-Methods/Run-on-every-render/FunCom/Parent';
+// import Parent from './Life-Cycle-Methods/Parent';
+// import A from './State/SyncData/FunctionalComponents/4.GlobalState/React-Redux/React-Components/A';
+// import Parent from './Class-Components/Parent';
+// import Parent from './Performance/Virtual-Dom/WithSameProp-Value/Parent';
+// import Heavy from './Performance/Virtual-Dom/WithSameProp-Value/Heavy';
+// import CallbackParent from './Performance/Virtual-Dom/WithSameProp-Value/CallbackParent';
+
 // import Parent from './Performance/Virtual-Dom/Without-Props/Parent';
 // import Parent from './client-side-routing/Parent';
 // import Inline from './CSS/Inline/Inline';
@@ -90,7 +98,13 @@ class App extends React.Component{
         {/* <Parent/> */}
         {/* <Heavy/> */}
         {/* <CallbackParent/> */}
-        {new Myclass().render()}
+        {/* {new Myclass().render()} */}
+        {/* <Parent/> */}
+        {/* <A/> */}
+        {/* <Parent/> */}
+        {/* <Parent/> */}
+        {/* <Container/> */}
+        <Parent/>
       </div>
     ); 
   }
