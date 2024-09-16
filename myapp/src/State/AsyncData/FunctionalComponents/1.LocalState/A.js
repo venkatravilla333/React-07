@@ -11,6 +11,7 @@ function A() {
 
   useEffect(() => {
     setLoading(true)
+    setError(false)
     axios.get('https://jsonplaceholder.typicode.com/posts').then((res) => {
       console.log(res.data);
       setLoading(false)

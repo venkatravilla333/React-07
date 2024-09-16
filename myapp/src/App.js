@@ -1,5 +1,9 @@
 import React from 'react'
-import Parent from './Life-Cycle-Methods/Error-Boundry/Parent';
+import InputRef from './Refs/ClassCom/InputRef';
+// import A from './State/AsyncData/FunctionalComponents/4.GlobalState/Reducer-ContextAPI/A';
+// import A from './State/AsyncData/FunctionalComponents/1.LocalState/useReducer/A';
+// import Parent from './Life-Cycle-Methods/Error-Boundry/Parent';
+// import A from './State/AsyncData/FunctionalComponents/1.LocalState/A';
 // import Container from './Life-Cycle-Methods/Cleanup/FunCom/Container';
 // import Parent from './Life-Cycle-Methods/Runs-Only-Once/FunCom/Parent';
 // import Parent from './Life-Cycle-Methods/Runs-Conditionally/FunCom/Parent';
@@ -104,7 +108,11 @@ class App extends React.Component{
         {/* <Parent/> */}
         {/* <Parent/> */}
         {/* <Container/> */}
-        <Parent/>
+        {/* <Parent/> */}
+        {/* <A/> */}
+        {/* <A/> */}
+        <InputRef/>
+        
       </div>
     ); 
   }
