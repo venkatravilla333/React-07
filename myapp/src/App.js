@@ -1,5 +1,7 @@
 import React from 'react'
-import InputRef from './Refs/ClassCom/InputRef';
+import ParentRef from './Refs/ClassCom/Attach-To-ChildComponent/ParentRef';
+import Parent from './Refs/ClassCom/Forwarding-Refs/Parent';
+// import InputRef from './Refs/ClassCom/InputRef';
 // import A from './State/AsyncData/FunctionalComponents/4.GlobalState/Reducer-ContextAPI/A';
 // import A from './State/AsyncData/FunctionalComponents/1.LocalState/useReducer/A';
 // import Parent from './Life-Cycle-Methods/Error-Boundry/Parent';
@@ -111,7 +113,9 @@ class App extends React.Component{
         {/* <Parent/> */}
         {/* <A/> */}
         {/* <A/> */}
-        <InputRef/>
+        {/* <InputRef/> */}
+        {/* <ParentRef/> */}
+        <Parent/>
         
       </div>
     ); 

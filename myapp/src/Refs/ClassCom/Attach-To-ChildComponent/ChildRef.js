@@ -6,6 +6,10 @@ export class ChildRef extends Component {
   
     this.myRef = React.createRef()
   }
+  focusInput() {
+    console.log(this.myRef.current)
+    this.myRef.current.focus()
+  }
 
   render() {
     return (
