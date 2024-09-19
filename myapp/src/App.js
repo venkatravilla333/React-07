@@ -1,6 +1,8 @@
 import React from 'react'
-import ParentRef from './Refs/ClassCom/Attach-To-ChildComponent/ParentRef';
-import Parent from './Refs/ClassCom/Forwarding-Refs/Parent';
+import Uncontrolled from './Refs/Controlled-Uncontrolled/Uncontrolled/Uncontrolled';
+// import Controlled from './Refs/Controlled-Uncontrolled/Controlled/Controlled';
+// import ParentRef from './Refs/ClassCom/Attach-To-ChildComponent/ParentRef';
+// import Parent from './Refs/ClassCom/Forwarding-Refs/Parent';
 // import InputRef from './Refs/ClassCom/InputRef';
 // import A from './State/AsyncData/FunctionalComponents/4.GlobalState/Reducer-ContextAPI/A';
 // import A from './State/AsyncData/FunctionalComponents/1.LocalState/useReducer/A';
@@ -115,7 +117,10 @@ class App extends React.Component{
         {/* <A/> */}
         {/* <InputRef/> */}
         {/* <ParentRef/> */}
-        <Parent/>
+        {/* <Parent/> */}
+        {/* <Controlled/> */}
+        <Uncontrolled/>
+        
         
       </div>
     ); 
